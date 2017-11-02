@@ -1,3 +1,6 @@
 button {
 	border-radius: 2px;
 }
+.active {
+	background-color: blue;
+}
