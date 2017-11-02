@@ -11,7 +11,7 @@ function activateItem(){
 }
 ourButton.addEventListener("click", newItem);
 function newItem(){
-	ourlist.innerHTML+="<li>new stuff"+newCounter+"</li>"; 
+	ourlist.innerHTML+="<li>new stuff "+newCounter+"</li>"; 
 	newCounter+=1;
 
 }
