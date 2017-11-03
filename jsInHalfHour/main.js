@@ -1,6 +1,6 @@
-var tits = document.getElementById("inTitle");
-var listItems = document.getElementById("ourlist").getElementsByTagName('li');
-var ourButton = document.getElementById('our-button');
+var tits = document.querySelector("#inTitle");
+var listItems = document.querySelectorAll("#ourlist li");
+var ourButton = document.querySelector('#our-button');
 var newCounter = 1;
 
 ourlist.addEventListener('click',activateItem);
@@ -8,8 +8,8 @@ ourlist.addEventListener('click',activateItem);
 function activateItem(e){
 	if(e.target.nodeName == "LI"){
 		tits.innerHTML = e.target.innerHTML;
-	for (var i =0; i< listItems.length; i++){
-	listItems[i].classList.remove("active");
+	for (var i =0; i< e.target.parentNode.children.length; i++){
+	e.target.parentNode.children[i].classList.remove("active");
 	}
 	e.target.classList.add('active');
 	
